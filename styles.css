@@ -13,8 +13,8 @@ body {
 
 body {
   font-family: "Montserrat", system-ui, sans-serif;
-  color: #ece9fb;
-  background: #4a2140;
+  color: #4a2140;
+  background: #fff;
 }
 
 .hero {
@@ -24,11 +24,7 @@ body {
   place-items: center;
   padding: 2rem;
   text-align: center;
-  /* Fallback gradient shows if assets/hero.jpg is missing */
-  background:
-    linear-gradient(rgba(74, 33, 64, 0.55), rgba(74, 33, 64, 0.55)),
-    url("assets/hero.jpg") center / cover no-repeat,
-    linear-gradient(135deg, #3a1832 0%, #7a3a6a 50%, #b85c9e 100%);
+  background: #fff;
 }
 
 .hero__content {
@@ -38,7 +34,7 @@ body {
 }
 
 .emblem {
-  width: clamp(90px, 14vw, 160px);
+  width: clamp(110px, 18vw, 200px);
   height: auto;
   margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
   filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.25));
@@ -46,24 +42,15 @@ body {
 
 .logo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: inherit;
-}
-
-.logo__name {
-  font-weight: 600;
-  font-size: clamp(3rem, 12vw, 8.5rem);
-  letter-spacing: 0.22em;
-  margin-right: -0.22em; /* offset trailing letter-spacing so text stays centered */
-  line-height: 1;
-}
-
-.logo__tagline {
-  margin-top: clamp(1rem, 3vw, 2rem);
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1.3em;
   font-weight: 300;
   font-size: clamp(1rem, 3vw, 2rem);
   letter-spacing: 1.05em;
+}
+
+.logo__tagline {
   margin-right: -1.05em;
 }
 
@@ -71,7 +58,7 @@ body {
   width: clamp(80px, 12vw, 130px);
   margin: clamp(2rem, 5vw, 3.5rem) 0 clamp(2rem, 4vw, 3rem);
   border: 0;
-  border-top: 1px solid rgba(236, 233, 251, 0.6);
+  border-top: 1px solid rgba(74, 33, 64, 0.6);
 }
 
 .status {
