@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200" role="img" aria-label="Malas Architects logo">
+  <defs>
+    <clipPath id="inner">
+      <circle cx="100" cy="100" r="89" />
+    </clipPath>
+    <g id="stamen">
+      <line x1="8" y1="0" x2="36" y2="0" stroke="#fff" stroke-width="1" />
+      <circle cx="36" cy="0" r="1.6" fill="#fff" />
+    </g>
+    <!-- Plum blossom centred at origin, facing +x -->
+    <g id="blossom">
+      <circle cx="0" cy="0" r="36" />
+      <circle cx="42" cy="0" r="26" />
+      <circle cx="13" cy="40" r="26" />
+      <circle cx="13" cy="-40" r="26" />
+      <circle cx="-34" cy="25" r="26" />
+      <circle cx="-34" cy="-25" r="26" />
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#fff" stroke-width="1.5" />
+      <use xlink:href="#stamen" transform="rotate(-81)" />
+      <use xlink:href="#stamen" transform="rotate(-63)" />
+      <use xlink:href="#stamen" transform="rotate(-45)" />
+      <use xlink:href="#stamen" transform="rotate(-27)" />
+      <use xlink:href="#stamen" transform="rotate(-9)" />
+      <use xlink:href="#stamen" transform="rotate(9)" />
+      <use xlink:href="#stamen" transform="rotate(27)" />
+      <use xlink:href="#stamen" transform="rotate(45)" />
+      <use xlink:href="#stamen" transform="rotate(63)" />
+      <use xlink:href="#stamen" transform="rotate(81)" />
+    </g>
+  </defs>
+
+  <circle cx="100" cy="100" r="99" fill="#fff" />
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#ff88ff" stroke-width="4" />
+
+  <g clip-path="url(#inner)">
+    <use xlink:href="#blossom" fill="#ff88ff" transform="translate(20 100)" />
+    <use xlink:href="#blossom" fill="#ffb3ff" transform="translate(140 30.7) rotate(120)" />
+    <use xlink:href="#blossom" fill="#b85c9e" transform="translate(140 169.3) rotate(-120)" />
+  </g>
+</svg>
